@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Perfil del usuario</title>
+
+	<meta name="description" content="Perfil de persona natural
+					  vista por el dueño del perfil">
+	<meta name="author" content="LayoutIt!">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-md-3">
+		    <h3>Michael Scott</h3>
+		    <h5>michael@dundermifflin.com</h5><br>
+		    <center>
+			<img alt="Michael Scott"
+			     src="./images/michael_scott.jpeg"
+			     class="rounded-circle" style="height:
+			     70%; width: 70%; object-fit: contain"/>
+		    </center></br>
+		    <center>
+			<button type="button" class="btn btn-primary">
+			    Cambiar foto de perfil
+			</button><br>
+		    </center>
+		</div>
+		<div class="col-md-9">
+		    <div class="tabbable" id="tabs-814902">
+			<ul class="nav nav-tabs">
+			    <li class="nav-item">
+				<a class="nav-link active show"
+				   href="#tab1" data-toggle="tab">Editar perfil</a>
+			    </li>
+			    <li class="nav-item">
+				<a class="nav-link" href="#tab2" data-toggle="tab">Amigos</a>
+			    </li>
+			    <li class="nav-item">
+				<a class="nav-link" href="#tab3" data-toggle="tab">Actividades</a>
+			    </li>
+
+			</ul>
+			<div class="tab-content">    
+			    <!-- Tab 1: editar perfil -->
+			    <div class="tab-pane active" id="tab1">
+				<form name="profile">
+				    <div class="form-group">
+					<label for="exampleInputName1">
+					    Nombre
+					</label><br>
+					<input type="text"					     
+					       id="exampleInputName1"
+					       size="40"
+					       value="Michael"
+					       required>
+				    </div>
+				    <div class="form-group">
+					<label for="exampleInputLastName1">
+					    Apellido
+					</label><br>
+					<input type="Apellido"					     
+					       id="exampleInputLastName1"
+					       size="40"
+					       value="Scott"
+					       required>
+				    </div>
+				    <div class="form-group">
+					<label for="exampleInputEmail1">
+					    Correo electrónico
+					</label><br>
+					<input type="email"					     
+					       id="exampleInputEmail1"
+					       size="40"
+					       value="michael@dundermifflin.com"
+					       required>
+				    </div>
+				    <button type="submit" class="btn btn-primary">
+					Aplicar
+				    </button>
+				</form>
+				<br>
+				<br>
+
+				<h3>Modificar contraseña</h3>
+				<form name="password">
+				    <div class="form-group">
+					<label for="exampleInputCurrentPassword1">
+					    Contraseña actual
+					</label><br>
+					<input type="password"
+					       id="exampleInputCurrentPassword1"
+					       size="40">
+				    </div>
+				    <div class="form-group">
+					<label for="exampleInputNewPassword1">
+					    Nueva contraseña
+					</label><br>
+					<input type="password"
+					       id="exampleInputNewPassword1"
+					       size="40">
+				    </div>
+				    <div class="form-group">
+					<label for="exampleInputConfirmPassword1">
+					    Confirmar nueva contraseña
+					</label><br>
+					<input type="password"
+					       id="exampleInputConfirmPassword1"
+					       size="40">
+				    </div>
+			    
+				    <button type="submit" class="btn btn-primary">
+					Aplicar
+				    </button>
+				</form>
+			    </div>
+
+			    <!-- Tab 2: Amigos -->
+			    <div class="tab-pane" id="tab2">
+				<p>
+				    Howdy, I'm in tab 2.
+				</p>
+			    </div>
+
+			    <!-- Tab 3: Actividades -->
+			    <div class="tab-pane" id="tab3">
+				<p>
+				    Howdy, I'm in tab 3.
+				</p>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+    </body>
+</html>
