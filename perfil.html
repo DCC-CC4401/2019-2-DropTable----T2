@@ -11,15 +11,14 @@
 					  vista por el dueño del perfil">
 	<meta name="author" content="LayoutIt!">
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
 
     </head>
     <body>
-
 	<div class="container-fluid">
 	    <div class="row">
-		<div class="col-md-3">
+		<div class="col-md-4">
 		    <h3>Michael Scott</h3>
 		    <h5>michael@dundermifflin.com</h5><br>
 		    <center>
@@ -27,14 +26,16 @@
 			     src="./images/michael_scott.jpeg"
 			     class="rounded-circle" style="height:
 			     70%; width: 70%; object-fit: contain"/>
-		    </center></br>
-		    <center>
-			<button type="button" class="btn btn-primary">
-			    Cambiar foto de perfil
-			</button><br>
-		    </center>
+		    </center><br>
+		    <!-- <center> -->
+		    <!-- 	<button type="button" class="btn btn-primary"> -->
+		    <!-- 	    Cambiar foto de perfil -->
+		    <!-- 	</button><br> -->
+		    <!-- </center><br><br>		     -->
 		</div>
-		<div class="col-md-9">
+
+		
+		<div class="col-md-8">
 		    <div class="tabbable" id="tabs-814902">
 			<ul class="nav nav-tabs">
 			    <li class="nav-item">
@@ -50,8 +51,10 @@
 
 			</ul>
 			<div class="tab-content">    
+
 			    <!-- Tab 1: editar perfil -->
-			    <div class="tab-pane active" id="tab1">
+			    <div class="tab-pane active" id="tab1"><br>
+				<h3>Modificar datos de usuario</h3>
 				<form name="profile">
 				    <div class="form-group">
 					<label for="exampleInputName1">
@@ -83,6 +86,16 @@
 					       value="michael@dundermifflin.com"
 					       required>
 				    </div>
+				    <div class="form-group">
+					<label for="exampleInputFile">
+					    Foto de perfil
+					</label>
+					<input type="file" class="form-control-file" id="exampleInputFile">
+					<!-- <p class="help-block"> -->
+					<!--     Example block-level help text here. -->
+					<!-- </p> -->
+				</div>
+
 				    <button type="submit" class="btn btn-primary">
 					Aplicar
 				    </button>
@@ -122,13 +135,239 @@
 				    </button>
 				</form>
 			    </div>
-
+			    
+			    
 			    <!-- Tab 2: Amigos -->
-			    <div class="tab-pane" id="tab2">
-				<p>
-				    Howdy, I'm in tab 2.
-				</p>
-			    </div>
+			    <div class="tab-pane" id="tab2"><br>
+
+				<h3>Buscar personas</h3>
+				<form name="friends-search">
+				    <input type="text"
+					   id="exampleInputFriendsSearch1"
+					   size="40"
+					   value="darryl@dundermifflin.com">
+				    <button type="submit" class="btn btn-primary">
+					Buscar</button>
+				</form><br>
+
+				<h4>Resultados</h4><br>
+				<div class="row">
+				    <div class="col-md-2">
+					<div class="card h-100">
+					    <center>
+						<img alt="Darryl Philbin"
+						     src="./images/darryl_philbin.jpeg"
+						     class="rounded-circle" style="height:
+										   100%; width: 100%; object-fit: contain"/>
+					    </center><br>
+					    <div class="card-body">
+						<center>
+						    <h5 class="card-title">Darryl Philbin</h5>
+						    <!-- <p class="card-text">Algún texto</p> -->
+						    <p>
+							<a class=" btn
+								  btn-primary"
+							   href="#">Ver</a><br><br>
+							<a class="btn
+								  btn-success"
+							   href="#">Agregar</a><br><br>
+						    </p>
+						</center>
+					    </div>
+					</div>
+				    </div>
+				</div><!-- row 1 -->			
+				
+				<br><br>
+
+				<h3>Lista de amigos</h3>
+				<div class="row">
+				    <div class="col-md-2">
+					<div class="card h-100">
+					    <center>
+						<img alt="Holly Flax"
+						     src="./images/holly_flax.jpeg"
+						     class="rounded-circle" style="height:
+										   100%; width: 100%; object-fit: contain"/>
+					    </center><br>
+					    <div class="card-body">
+						<center>
+						    <h5 class="card-title">Holly Flax</h5>
+						    <!-- <p class="card-text">Algún
+							texto</p> -->  
+						    <p>
+							<a class=" btn
+								  btn-primary"
+							   href="#">Ver</a><br><br>
+							<a class="btn
+								  btn-danger"
+							   href="#">Eliminar</a>
+						    </p>
+						</center>
+					    </div>
+					</div>
+				    </div>
+				    
+				    <div class="col-md-2">
+					<div class="card h-100">
+					    <center>
+						<img alt="Jim Halpert"
+						     src="./images/jim_halpert.jpeg"
+						     class="rounded-circle" style="height:
+										   100%; width: 100%; object-fit: contain"/>
+					    </center><br>
+					    <div class="card-body">
+						<center>
+						    <h5 class="card-title">Jim Halpert</h5>
+						    <!-- <p class="card-text">Algún texto</p> -->
+						    <p>
+							<a class="btn
+								  btn-primary"
+							   href="#">Ver</a><br><br>
+							<a class="btn
+								  btn-danger"
+							   href="#">Eliminar</a>
+						    </p>
+						</center>
+					    </div>
+					</div>
+				    </div>
+				    <div class="col-md-2">
+					<div class="card h-100">
+					    <center>
+						<img alt="Pam Beesly"
+						     src="./images/pam_beesly.jpeg"
+						     class="rounded-circle" style="height:
+										   100%; width: 100%; object-fit: contain"/>
+					    </center><br>
+					    <div class="card-body">
+						<center>
+						    <h5 class="card-title">Pam Beesly</h5>
+						    <!-- <p class="card-text">Algún texto</p> -->
+						    <p>
+							<a class="btn
+								  btn-primary"
+							   href="#">Ver</a><br><br>
+							<a class="btn
+								  btn-danger"
+							   href="#">Eliminar</a>
+						    </p>
+						</center>
+					    </div>
+					</div>
+				    </div>
+				    <div class="col-md-2">
+					<div class="card h-100">
+					    <center>
+						<img alt="Dwight Schrute"
+						     src="./images/dwight_schrute.jpeg"
+						     class="rounded-circle" style="height:
+										   100%; width: 100%; object-fit: contain"/>
+					    </center><br>
+					    <div class="card-body">
+						<center>
+						    <h5 class="card-title">Dwight Schrute</h5>
+						    <!-- <p class="card-text">Algún texto</p> -->
+						    <p>
+							<a class="btn
+								  btn-primary"
+							   href="#">Ver</a><br><br>
+							<a class="btn
+								  btn-danger"
+							   href="#">Eliminar</a>
+						    </p>
+						</center>
+					    </div>
+					</div>
+				    </div>
+				    <div class="col-md-2">
+					<div class="card h-100">
+					    <center>
+						<img alt="Ryan Howard"
+						     src="./images/ryan_howard.jpeg"
+						     class="rounded-circle" style="height:
+										   100%; width: 100%; object-fit: contain"/>
+					    </center><br>
+					    <div class="card-body">
+						<center>
+						    <h5 class="card-title">Ryan Howard</h5>
+						    <!-- <p class="card-text">Algún texto</p> -->
+						    <p>
+							<a class="btn
+								  btn-primary"
+							   href="#">Ver</a><br><br>
+							<a class="btn
+								  btn-danger"
+							   href="#">Eliminar</a>
+						    </p>
+						</center>
+					    </div>
+					</div>
+				    </div>
+				</div><!-- row 1 -->
+
+				<br><br>
+				
+				<h3>Solicitudes de amistad</h3>
+				<div class="row">
+				    <div class="col-md-2">
+					<div class="card h-100">
+					    <center>
+						<img alt="Andy Bernard"
+						     src="./images/andy_bernard.jpeg"
+						     class="rounded-circle" style="height:
+										   100%; width: 100%; object-fit: contain"/>
+					    </center><br>
+					    <div class="card-body">
+						<center>
+						    <h5 class="card-title">Andy Bernard</h5>
+						    <!-- <p class="card-text">Algún texto</p> -->
+						    <p>
+							<a class=" btn
+								  btn-primary"
+							   href="#">Ver</a><br><br>
+							<a class="btn
+								  btn-success"
+							   href="#">Aceptar</a><br><br>
+							<a class="btn
+								  btn-danger"
+							   href="#">Cancelar</a>
+						    </p>
+						</center>
+					    </div>
+					</div>
+				    </div>
+
+				    <div class="col-md-2">
+					<div class="card h-100">
+					    <center>
+						<img alt="Toby Flenderson"
+						     src="./images/toby_flenderson.jpeg"
+						     class="rounded-circle" style="height:
+										   100%; width: 100%; object-fit: contain"/>
+					    </center><br>
+					    <div class="card-body">
+						<center>
+						    <h5 class="card-title">Toby Flenderson</h5>
+						    <!-- <p class="card-text">Algún texto</p> -->
+						    <p>
+							<a class=" btn
+								  btn-primary"
+							   href="#">Ver</a><br><br>
+							<a class="btn
+								  btn-success"
+							   href="#">Aceptar</a><br><br>
+							<a class="btn
+								  btn-danger"
+							   href="#">Cancelar</a>
+
+						    </p>
+						</center>
+					    </div>
+					</div>
+				    </div>
+				</div><!-- row 2 -->
+			    </div> <!-- tab 2 -->
 
 			    <!-- Tab 3: Actividades -->
 			    <div class="tab-pane" id="tab3">
@@ -136,11 +375,11 @@
 				    Howdy, I'm in tab 3.
 				</p>
 			    </div>
-			</div>
-		    </div>
-		</div>
-	    </div>
-	</div>	
+			</div> <!-- tab-content -->
+		    </div> <!-- tabbable -->
+		</div> <!-- col-md-9 -->
+	    </div> <!-- row -->
+	</div> <!-- container-fluid -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>

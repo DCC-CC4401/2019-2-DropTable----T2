@@ -1,1 +1,5 @@
 # Empty CSS file for your own CSS
+body {
+  height: 100%;
+  background-color: #ff0000;
+}
