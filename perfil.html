@@ -369,10 +369,46 @@
 			    </div> <!-- tab 2 -->
 
 			    <!-- Tab 3: Actividades -->
-			    <div class="tab-pane" id="tab3">
-				<p>
-				    Howdy, I'm in tab 3.
-				</p>
+			    <div class="tab-pane" id="tab3"><br>
+				<h3>Crear actividad tipo</h3>
+				<form name="actividad_tipo">
+				    <div class="form-group">
+					<label for="activityName">
+					    Nombre de la actividad
+					</label><br>
+					<input type="text"
+					       id="activityName"
+					       size="40">
+				    </div>
+				    <div class="form-group">
+					<label for="activityCategory">
+					    Categoría
+					</label><br>					
+					<select id="activityCategory">
+					    <option value="dormir">Dormir</option>
+					    <option value="estudiar">Estudiar</option>
+					    <option value="irAClase">Ir
+						a clases</option>
+					    <option value="viajar">Viajar</option>
+					    <option value="hacerEjercicio">Hacer
+						ejercicio</option>
+					    <option value="socializar">Socializar</option>
+					    <option value="jugar">Jugar</option>
+					    <option value="otros">Otros</option>
+					</select>
+				    </div>
+				    <div class="form-group">
+					<label for="activityDescription">
+					    Descripción
+					</label><br>					
+					<textarea id="myTextArea"
+					    rows="3"
+					    cols="40"></textarea>
+				    </div>
+				    <button type="submit" class="btn btn-primary">
+					Crear
+				    </button>
+				</form>
 			    </div>
 			</div> <!-- tab-content -->
 		    </div> <!-- tabbable -->
