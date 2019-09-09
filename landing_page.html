@@ -12,11 +12,16 @@
 
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/style.css" rel="stylesheet">
+
+	<!-- Calendario -->
+	<link href="./css/calendar/fullcalendar.print.min.css" rel="stylesheet" media="print" />
+	<link href="./css/calendar/fullcalendar.min.css" rel='stylesheet'>
+	<link href="./css/calendar/semantic.min.css" rel="stylesheet">
+	
     </head>
     <body>
 	<div class="container-fluid">
 	    <div class="row">
-
 		<div class="col-md-2">
 		    <h3>Bienvenido, Michael Scott</h3>
 		    <!-- <h5>michael@dundermifflin.com</h5><br> -->
@@ -55,7 +60,7 @@
 			    <!-- Tab 1: Registrar actividad -->
 			    <div class="tab-pane active"
 				 id="tab1"><br>
-				<h3>Registrar actividad en tiempo real</h3><br>
+				<h2>Registrar actividad en tiempo real</h2><br>
 
 				<form name="Tipo">
 				    <div class="form-group">
@@ -109,9 +114,147 @@
 
 			    <!-- Tab 2: calendario -->
 			    <div class="tab-pane" id="tab2"><br>
-				dsfsdfds
+				<h2>Resumen de actividades</h2>
+				<form name="calendarFilter">
+				    <div class="form-group">
+					<label for="activityCategory">
+					    Filtrar por categoría:
+					</label><br>					
+					<select id="activityCategory">
+					    <option value="todas">Todas</option>
+					    <option value="dormir">Dormir</option>
+					    <option value="estudiar">Estudiar</option>
+					    <option value="irAClase">Ir
+						a clases</option>
+					    <option value="viajar">Viajar</option>
+					    <option value="hacerEjercicio">Hacer
+						ejercicio</option>
+					    <option value="socializar">Socializar</option>
+					    <option value="jugar">Jugar</option>
+					    <option value="otros">Otros</option>
+					</select>
+				    </div>
+				</form>
+				
+				<div class="ui container">
+				    <div class="ui grid">
+					<div class="ui sixteen column">
+					    <div id="calendar"></div>
+					</div>
+				    </div>
+				</div>
 			    </div>
-			    
+
+			    <!-- Tab 3: Estadísticas -->
+			    <div class="tab-pane" id="tab3"><br>
+
+				<h2>Sus tiempos</h2>
+				<div class="row">
+				    <div class="col-md-4">
+					<form name="statistics-1">
+					    <div class="form-group">
+						<label for="statistics-1-1">
+						    Rango de tiempo:
+						</label><br>					
+						<select id="statistics-1-1">
+						    <option value="semana">Semana</option>
+						    <option value="mes">Mes</option>
+						    <option value="año">Año</option>
+						</select><br>
+						
+						<label for="statistics-1-2">
+						    Filtrar por categoría:
+						</label><br>					
+						<select id="statistics-1-2">
+						    <option value="todas">Todas</option>
+						    <option value="dormir">Dormir</option>
+						    <option value="estudiar">Estudiar</option>
+						    <option value="irAClase">Ir
+							a clases</option>
+						    <option value="viajar">Viajar</option>
+						    <option value="hacerEjercicio">Hacer
+							ejercicio</option>
+						    <option value="socializar">Socializar</option>
+						    <option value="jugar">Jugar</option>
+						    <option value="otros">Otros</option>
+						</select>
+					    </div>
+					</form>
+					<ul>
+					    <li><strong>Total:</strong> 135:36:42</li>
+					    <li><strong>Promedio por actividad:</strong> 01:30:13</li>
+					    <li><strong>Desviación
+						    estándar:</strong>
+						    00:20:00</li>
+					</ul> 	
+				    </div>
+				    <div class="col-md-8">
+					<div class="wrapper" align="center">
+					    <img alt="statistics_1"
+						 src="./images/statistics_1.png"
+						 style="height: 50%;
+						 width: 100%;
+						 object-fit:
+						 contain"/>
+					    <br><br>
+					</div>
+				    </div>
+				</div>  <!-- row -->
+
+				<h2>Tiempos de sus amigos</h2>
+				<div class="row">
+				    <div class="col-md-4">
+					<form name="statistics-2">
+					    <div class="form-group">
+						<label for="statistics-2-1">
+						    Rango de tiempo:
+						</label><br>					
+						<select id="statistics-2-1">
+						    <option value="semana">Semana</option>
+						    <option value="mes">Mes</option>
+						    <option value="año">Año</option>
+						</select><br>
+						
+						<label for="statistics-2-2">
+						    Filtrar por categoría:
+						</label><br>					
+						<select id="statistics-2-2">
+						    <option value="todas">Todas</option>
+						    <option value="dormir">Dormir</option>
+						    <option value="estudiar">Estudiar</option>
+						    <option value="irAClase">Ir
+							a clases</option>
+						    <option value="viajar">Viajar</option>
+						    <option value="hacerEjercicio">Hacer
+							ejercicio</option>
+						    <option value="socializar">Socializar</option>
+						    <option value="jugar">Jugar</option>
+						    <option value="otros">Otros</option>
+						</select>
+					    </div>
+					</form>
+					<ul>
+					    <li><strong>Total:</strong> 135:36:42</li>
+					    <li><strong>Promedio por actividad:</strong> 01:30:13</li>
+					    <li><strong>Desviación
+						    estándar:</strong>
+						    00:20:00</li>
+					</ul> 	
+				    </div>
+				    <div class="col-md-8">
+					<div class="wrapper" align="center">
+					    <img alt="statistics_1"
+						 src="./images/statistics_2.png"
+						 style="height: 50%;
+						 width: 100%;
+						 object-fit:
+						 contain"/>
+					    <br><br>
+					</div>
+				    </div>
+				</div>  <!-- row -->
+				
+			    </div>
 			</div>  <!-- tab-content -->
 		    </div>  <!-- tabbable -->
 		</div>  <!-- col-md-8 -->
@@ -138,5 +281,13 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
+
+	<!-- Calendario -->
+	<script src="./js/calendar/semantic.min.js"></script>
+	<script src="./js/calendar/jquery.min.js"></script>
+	<script src="./js/calendar/moment.min.js"></script>
+	<script src="./js/calendar/fullcalendar.min.js"></script>
+	<script src="./js/calendar/calendar.js"></script>
+	
     </body>
 </html>
