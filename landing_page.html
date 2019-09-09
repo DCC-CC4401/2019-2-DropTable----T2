@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Landing page</title>
+
+	<meta name="description" content="Landing page para personas
+					  naturales (ya logeados)">
+
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+    </head>
+    <body>
+	<div class="container-fluid">
+	    <div class="row">
+
+		<div class="col-md-2">
+		    <h3>Bienvenido, Michael Scott</h3>
+		    <!-- <h5>michael@dundermifflin.com</h5><br> -->
+		    <div class="wrapper" align="center">
+			<img alt="Michael Scott"
+			     src="./images/michael_scott.jpeg"
+			     class="rounded-circle" style="height:
+							   70%; width: 70%; object-fit: contain"/>
+			<br><br>
+			<input type="button"
+			       onClick="location.href='perfil.html'"
+			       value='Visitar perfil'>
+		    </div>
+		</div>  <!-- col-md-2 -->
+
+		
+		<div class="col-md-8">
+		    <div class="tabbable" id="tabs-landing-page">
+			<ul class="nav nav-tabs">
+			    <li class="nav-item">
+				<a class="nav-link active show"
+				   href="#tab1"
+				   data-toggle="tab">Registrar actividad</a>
+			    </li>
+			    <li class="nav-item">
+				<a class="nav-link" href="#tab2"
+				data-toggle="tab">Calendario</a>
+			    </li>
+			    <li class="nav-item">
+				<a class="nav-link" href="#tab3"
+				data-toggle="tab">Estadísticas</a>
+			    </li>
+			</ul>
+			<div class="tab-content">    
+			    <!-- Tab 1: Registrar actividad -->
+			    <div class="tab-pane active"
+				 id="tab1"><br>
+			    </div>
+
+			    <!-- Tab 2: calendario -->
+			    <div class="tab-pane" id="tab2"><br>
+				dsfsdfds
+			    </div>
+			</div>
+		    </div>  <!-- tabbable -->
+		</div>  <!-- col-md-8 -->
+
+		
+		<div class="col-md-2">
+		    <div class="card">
+			<h3 class="card-header" align="center">Actividad actual</h3>
+			<div class="card-body" align="center">
+			    <br>
+			    <h5>Estudiar Ingeniería de Software</h5><br>
+			    <h3>00:58:35</h3><br>
+			    <button type="button" class="btn
+							 btn-outline-primary">Pausar
+			    </button>
+			    <button type="button" class="btn
+							 btn-outline-primary">Finalizar
+			    </button><br><br>
+			</div>
+		    </div> <!-- card -->
+		</div>  <!-- col-md-2 -->		
+	    </div>  <!-- row -->
+	</div>  <!-- container-fluid -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+    </body>
+</html>
